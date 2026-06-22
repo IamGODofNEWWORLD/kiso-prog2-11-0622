@@ -62,7 +62,7 @@ int main(void) {
      *   found が 1 なら → "最高気温: ○○ / ○○°C / ○○%" を表示
      *   found が 0 なら → "データがありません" を表示                          */
     if(found >= 1){
-        printf("最高気温： %s / %d℃ / %.1f%%\n");
+        printf("最高気温： %s / %d℃ / %.1f%%\n", maxData.location, maxData.temperature, maxData.humidity);
     }
     else{
         printf("データがありません");
